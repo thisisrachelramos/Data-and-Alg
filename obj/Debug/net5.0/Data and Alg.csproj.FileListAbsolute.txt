@@ -1,0 +1,16 @@
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.exe
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.deps.json
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.runtimeconfig.json
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.runtimeconfig.dev.json
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.dll
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\ref\Data and Alg.dll
+C:\Users\raquel\Documents\Udemy\Data and Alg\bin\Debug\net5.0\Data and Alg.pdb
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.csprojAssemblyReference.cache
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.AssemblyInfoInputs.cache
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.AssemblyInfo.cs
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.csproj.CoreCompileInputs.cache
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.dll
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\ref\Data and Alg.dll
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.pdb
+C:\Users\raquel\Documents\Udemy\Data and Alg\obj\Debug\net5.0\Data and Alg.genruntimeconfig.cache
