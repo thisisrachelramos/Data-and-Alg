@@ -201,7 +201,7 @@ namespace Trees
         }
         /*
         We need a reference to the parent node
-        Need to do th esimple parts 
+        Need to do the simple parts 
         ****FIRSTTTT**
         */
         public void Remove(int value)
@@ -286,6 +286,17 @@ namespace Trees
 
                 }
             }
+        }
+
+        public void Traverse(Node root){
+            if (root == null){
+                return;
+            }
+
+            Traverse(root.Right);
+
+            Traverse(root.Left);
+       
         }
 
     }

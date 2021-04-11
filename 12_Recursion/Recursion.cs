@@ -39,10 +39,10 @@ namespace Recursion
 
         public int FibonacciIterative(int n)
         {
-            var list = new List<int>(){0,1};      
+            var list = new List<int>() { 0, 1 };
             for (int i = 2; i < n; i++)
             {
-               list.Add(list[i-1]+list[i-2]); 
+                list.Add(list[i - 1] + list[i - 2]);
             }
             return list[n];
         }
@@ -64,10 +64,62 @@ namespace Recursion
             return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
 
+
+        /*
+        Reflection: Strings are immutable in C# soooo we had to
+            - create a result sting by creating a NEW string with a given length and filler char
+            - Use the .Insert(i,string) function that RETURNS a string...
+        Besides that we nailed it... only had to look up new string() and .Insert
+        */
+        public static string ReverseStringIteratively(string input)
+        {
+            var result = new string(' ', input.Length);
+            for (int i = 0; i < input.Length; i++)
+            {
+                result = result.Insert(i, input[input.Length - 1 - i].ToString());
+            }
+            return result;
+        }
+
+        public  string ReverseStringIterativelyV2(string input)
+        {
+            var result = input.ToCharArray();
+            for (int i = 0; i < input.Length; i++)
+            {
+                result[i] = input[input.Length - 1 - i];
+            }
+            return new string(result);
+        }
+
+        public static string ReverseStringRecursive(string input)
+        {
+            if (input.Length == 0){
+                return input;
+            }
+
+            return ReverseStringRecursive(input.Substring(1)) + input[0];
+        }
+/*
+y
+o
+y
+o
+
+m
+a
+s
+t
+e
+r
+y
+
+since its recursive its going to return BACKWARDSSSSSSSSSSSSSSSSS
+*/
         public static void Main()
         {
-           // var result = FibonacciIterative(5);
+            // var result = FibonacciIterative(5);
             //var result = Fibonacci(7);
+            var result = ReverseStringRecursive("yoyo mastery");
             Console.WriteLine($"Answer is: {result}");
         }
 
