@@ -115,13 +115,13 @@ y
 
 since its recursive its going to return BACKWARDSSSSSSSSSSSSSSSSS
 */
-        public static void Main()
-        {
-            // var result = FibonacciIterative(5);
-            //var result = Fibonacci(7);
-            var result = ReverseStringRecursive("yoyo mastery");
-            Console.WriteLine($"Answer is: {result}");
-        }
+        // public static void Main()
+        // {
+        //     // var result = FibonacciIterative(5);
+        //     //var result = Fibonacci(7);
+        //     var result = ReverseStringRecursive("yoyo mastery");
+        //     Console.WriteLine($"Answer is: {result}");
+        // }
 
 
     }
