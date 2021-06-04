@@ -21,24 +21,26 @@ namespace Trees
 
     public class BinarySearchTree
     {
-        private Node _root;
+        public Node root;
+        public int length;
         //construc
-        BinarySearchTree()
+        public BinarySearchTree()
         {
-            _root = null;
+            root = null;
+            length = 0;
         }
 
         //insert
         public void Insert(int value)
         {
             var insertedNode = new Node(value);
-            if (_root == null)
+            if (root == null)
             {
-                _root = insertedNode;
+                root = insertedNode;
             }
 
             Node i, j;
-            i = j = _root;
+            i = j = root;
             // find my parent
             while (i != null)
             {
@@ -62,6 +64,7 @@ namespace Trees
             {
                 j.Left = insertedNode;
             }
+            length++;
         }
 
         public void InsertV2(int value)
@@ -71,12 +74,13 @@ namespace Trees
 
 
             // base case
-            if (_root == null)
+            if (root == null)
             {
-                _root = insertedNode;
+                root = insertedNode;
             }
 
-            var currentNode = _root;
+            var currentNode = root;
+                        length++;
             while (true)
             {
                 if (value > currentNode.Value)
@@ -101,12 +105,13 @@ namespace Trees
                     }
                 }
             }
+
         }
 
         //lookup
         public bool Lookup(int value)
         {
-            var i = _root;
+            var i = root;
             while (i != null)
             {
                 if (value == i.Value)
@@ -136,13 +141,14 @@ namespace Trees
         public void InsertV3(int value)
         {
             var newNode = new Node(value);
-            if (_root == null)
+            if (root == null)
             {
-                _root = newNode;
+                root = newNode;
                 return;
             }
 
-            var currentNode = _root;
+            var currentNode = root;
+                        length++;
             while (true)
             {
                 if (currentNode.Value < value)
@@ -174,11 +180,11 @@ namespace Trees
         //lookup
         public bool Lookupv2(int value)
         {
-            if (_root == null)
+            if (root == null)
             {
                 return false;
             }
-            var currentNode = _root;
+            var currentNode = root;
 
             while (currentNode != null)
             {
@@ -206,12 +212,12 @@ namespace Trees
         */
         public void Remove(int value)
         {
-            if (_root == null)
+            if (root == null)
             {
                 return;
             }
 
-            var current = _root;
+            var current = root;
             Node parent = null;
             /*
             val: 41
@@ -254,25 +260,30 @@ namespace Trees
                 {
 
 
-                    
+
                     var rightChild = current.Right;
                     // 1. Current node has no Right child
                     if (current.Right == null)
                     {
                         // root check
-                        if (parent == null){
-                            this._root = current.Left;
-                        }else{
+                        if (parent == null)
+                        {
+                            this.root = current.Left;
+                        }
+                        else
+                        {
                             // parent > current
                             // parent's left 
-                            if (parent.Value > current.Value){
+                            if (parent.Value > current.Value)
+                            {
                                 parent.Left = current.Left;
                             }
                             // parent < current
-                            else if (parent.Value < current.Value){
+                            else if (parent.Value < current.Value)
+                            {
                                 parent.Right = current.Left;
                             }
-                           
+
                         }
                     }
                     // todo:
@@ -288,15 +299,17 @@ namespace Trees
             }
         }
 
-        public void Traverse(Node root){
-            if (root == null){
+        public void Traverse(Node root)
+        {
+            if (root == null)
+            {
                 return;
             }
 
             Traverse(root.Right);
 
             Traverse(root.Left);
-       
+
         }
 
     }

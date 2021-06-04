@@ -55,14 +55,14 @@ namespace Sorting
         }
 
 
-   static void Main(string[] args)
-    {
-        int[] array = {8, 1, 56, 4, 7, 1, 87, 0};
-        foreach (var item in BubbleSortV3(array))
-        {
-            Console.WriteLine(item);
-        }
-    }
+//    static void Main(string[] args)
+//     {
+//         int[] array = {8, 1, 56, 4, 7, 1, 87, 0};
+//         foreach (var item in BubbleSortV3(array))
+//         {
+//             Console.WriteLine(item);
+//         }
+//     }
 
         public static int[] BubbleSortV3(int[] input){
 
