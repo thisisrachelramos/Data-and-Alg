@@ -61,12 +61,22 @@ namespace Traveral
             return result;
 
         }
-
-
-        static void Main(string[] args)
-        {
-
-
+// Post order
+        public List<int> DepthFirstSearch(Node current, List<int> result){
+            if (current.Left != null){
+                DepthFirstSearch(current.Left, result);
+            }
+            if (current.Right != null){
+                DepthFirstSearch(current.Right, result);
+            }
+            result.Add(current.Value);
+            return result;
         }
+
+        // static void Main(string[] args)
+        // {
+
+
+        // }
     }
 }
